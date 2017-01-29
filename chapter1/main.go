@@ -18,7 +18,8 @@ func main() {
 }
 
 func concurrent() {
-	go count()
+	//go count()
+	go channel()
 
 	time.Sleep(time.Millisecond * 2)
 	fmt.Println("Hello World")
