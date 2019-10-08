@@ -12,16 +12,5 @@ func getName() string {
 func main() {
 	name := getName()
 	fmt.Println("Hello ", name)
-
-	concurrent()
-
 }
 
-func concurrent() {
-	//go count()
-	go channel()
-
-	time.Sleep(time.Millisecond * 2)
-	fmt.Println("Hello World")
-	time.Sleep(time.Millisecond * 5)
-}
